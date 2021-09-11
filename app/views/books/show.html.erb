@@ -1,9 +1,10 @@
 <head></head>
 <body>
-  <p><strong>title:</strong></p>
-  <%= @book.title %>
-  <p><strong>body:</strong></p>
-  <%= @book.body %>
-  <a class="edit_19845" href="/books/19845/edit">Edit</a>-->
-  <a class="back" href="/books">Back</a>-->
+  <p><strong>Title:</strong>
+  <%= @book.title %></p>
+  <p><strong>Body:</strong>
+  <%= @book.body %></p>
+  <br><%= link_to"Edit",edit_book_path(@book.id) %>
+  |
+      <%= link_to"Back",books_path %>
 </body>
